@@ -1,8 +1,0 @@
-# Modules
-node_modules
-
-#Discord
-config.json
-process.env
-messageconfig.json
-.env
