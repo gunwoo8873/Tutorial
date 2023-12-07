@@ -1,5 +1,4 @@
-package Java.GUI.GUI_Screen;
-// 색상 랜덤, 직선 시작 끝점 랜덤좌표 (0 ~ 400) 직선 1만개
+
 
 import javax.swing.*;
 import java.awt.*;
