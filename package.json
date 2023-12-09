@@ -3,11 +3,17 @@
     "async": "^3.2.5",
     "client": "^0.0.1",
     "commando": "^0.0.2",
-    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "erlpack": "github:discordapp/erlpack",
     "express": "^4.18.2",
     "extend": "^3.0.2",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
-    "request": "^2.88.2"
+    "install": "^0.13.0",
+    "nodemon": "^3.0.2",
+    "npm": "^10.2.4",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "ts": "^0.2.2"
   }
 }
