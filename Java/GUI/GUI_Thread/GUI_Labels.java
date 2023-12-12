@@ -8,6 +8,7 @@ public class GUI_Labels extends JFrame {
     public GUI_Labels(String title) {
         super(title);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         Container container = getContentPane();
         container.setLayout(null);
 
@@ -49,19 +50,16 @@ class SubClass extends JPanel {
         super.paintComponent(g);
         g.setColor(Color.RED);
         int width = (int) (((double) getWidth() / maxBarSize) * barSize);
-        if (width == 0) {
-            return;
-        }
+
+        if (width == 0) { return; }
+
         g.fillRect(0, 0, width, getHeight());
     }
 
     synchronized void fill() {
         if (barSize == maxBarSize) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                return;
-            }
+            try { wait(); } 
+            catch (InterruptedException e) { return; }
         }
 
         barSize++;
@@ -71,11 +69,8 @@ class SubClass extends JPanel {
 
     synchronized void consume() {
         if (barSize == 0) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                return;
-            }
+            try { wait(); } 
+            catch (InterruptedException e) { return; }
         }
 
         barSize--;
@@ -87,19 +82,13 @@ class SubClass extends JPanel {
 class ConsumerThread extends Thread {
     private SubClass bar;
 
-    public ConsumerThread(SubClass bar) {
-        this.bar = bar;
-    }
+    public ConsumerThread(SubClass bar) { this.bar = bar; }
 
     @Override
     public void run() {
         while (true) {
-            try {
-                sleep(200);
-                bar.consume();
-            } catch (InterruptedException e) {
-                return;
-            }
+            try { sleep(200); bar.consume(); } 
+            catch (InterruptedException e) { return; }
         }
     }
 }

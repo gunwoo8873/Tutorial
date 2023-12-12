@@ -10,6 +10,8 @@
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "install": "^0.13.0",
+    "jquery": "^3.7.1",
+    "next.js": "^1.0.3",
     "nodemon": "^3.0.2",
     "npm": "^10.2.4",
     "path": "^0.12.7",

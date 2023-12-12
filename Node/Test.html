@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 { color: red; background-color: lightgray; }
+        h2 { color: blue; background-color: lightblue; }
+        h3 { color: green; background-color: lightgreen; }
+        h4 { color: purple; background-color: lavender; }
+        h5 { color: orange; background-color: lightcoral; }
+    </style>
+</head>
+<body>
+<script>
+    const headings = ['Heading 1', 'Heading 2', 'Heading 3', 'Heading 4', 'Heading 5'];
+    headings.forEach((text, index) => {
+        const headingElement = document.createElement(`h${index + 1}`);
+        headingElement.textContent = text;
+        document.body.appendChild(headingElement);
+    });
+</script>
+
+</body>
+</html>
