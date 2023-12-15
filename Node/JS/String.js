@@ -1,12 +1,15 @@
-const Name = 'Choigunwoo'
-const Skill = 'JavaScript'
+const name = 'Choigunwoo'
+const skill = 'JavaScript'
+const age = 26
 
 // EX1
 console.log('EX1');
-console.log(Name);
-console.log(Skill);
+console.log(name);
+console.log(skill);
+console.log(age);
 
-console.log('-----------');
+console.log('');
 
 // EX2
-console.log(`${Name} , ${Skill}`);
+console.log(`EX2`);
+console.log(`${name} , ${skill} , ${age}`);
