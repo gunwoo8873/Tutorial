@@ -1,6 +1,5 @@
 /*
 Window 객체 = Web Page 자체를 나타냄
-
 1. alert(msg) = Error Function Papup
 2. prompt(msg, value) = Prompt Output
  */
@@ -21,12 +20,12 @@ if (
     || navigator.userActivation.toLowerCase().indexOf('ipod') >= 0
     || navigator.userActivation.toLowerCase().indexOf('android') >= 0
     ) 
-    { alert('Phone Web') }
-else {alert('Desktop Web')}
+    { alert('Phone Web'); }
+else {alert('Desktop Web')};
 
 // Web Prompt Input
-const Input = prompt('Input Text:')
-alert(Input)
+const Input = prompt('Input Text:');
+alert(Input);
 
 // Web Next Page Delay (1000 = 1sec)
 setInterval(function () {
@@ -41,4 +40,4 @@ setInterval(function () {
     */
     
     location = 'url'
-}, 3000)
+}, 3000);

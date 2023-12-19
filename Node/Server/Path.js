@@ -22,7 +22,7 @@ console.log(`6.2 format =`, path.format({
     ext: `.js`
 }));
 // 슬래쉬(/) 혹은 역슬래쉬(\) 를 잘못 하용했을 경우 오류에 대한 문제를 변환
-console.log(`6.3 normalize =`, path.normalize(`E:\\Tutorial\\Node\\path.js`)) 
+console.log(`6.3 normalize =`, path.normalize(`E:\/Tutorial\/Node\/path.js`)) 
 
 // 디렉토리의 경로가 상대인지 절대인지 Boolean 형탤로 출력
 console.log(`7.1 isAbsolute =`, path.isAbsolute(`E:\\`)); // true

@@ -1,3 +1,2 @@
-const Main = function () {
-    return a + b
-}
+// EX
+const EX1_add = (a, b) => a + b

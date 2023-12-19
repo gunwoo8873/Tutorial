@@ -26,5 +26,10 @@ const FindLastIndex2 = MainArray.findIndex(Element => Element === String)
 console.log(FindLastIndex2); // -1
 
 // Array Index Reverse
-const ReversedIndex = MainArray.toReversed()
-console.log(ReverseArray);
+const toReversedIndex = MainArray.toReversed()
+console.log(toReversedIndex);
+
+// Array Index Change
+// Name[index Target] = ChangeValue
+MainArray[4] = `ADMIN`
+console.log(MainArray);
