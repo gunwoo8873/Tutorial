@@ -1,3 +1,4 @@
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
@@ -13,12 +14,14 @@ public class GUI_Vibrating extends JFrame implements Runnable{
         setSize(300,450);
         setVisible(true);
 
+        // Mouse OnClieck Action?
         getContentPane().addMouseListener(new MouseAdapter() {
-
             public void mousePressed(MouseEvent e) {
+                // Thread Action Exit
                 if (!Thread.isAlive()) {Thread.interrupt();}
             }
         });
+        
         Thread = new Thread(this);
         Thread.start();
     }
@@ -27,11 +30,10 @@ public class GUI_Vibrating extends JFrame implements Runnable{
     public void run() {
         Random R = new Random();
         while (true) {
-            try {
-                Thread.sleep(R.nextInt(1000));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            // Cooldown(?) or Delay => Action 1sec
+            try { Thread.sleep(R.nextInt(1000)); } 
+            catch (InterruptedException e) { e.printStackTrace(); }
+            
             int x = getX() + R.nextInt()%5;
             int y = getY() + R.nextInt()%5;
             setLocation(x, y);

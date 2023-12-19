@@ -1,3 +1,4 @@
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -12,6 +13,7 @@ public class GUI_Labels extends JFrame {
         Container container = getContentPane();
         container.setLayout(null);
 
+        // Bar Customizer
         Bar.setBackground(Color.ORANGE);
         Bar.setOpaque(true);
         Bar.setLocation(20, 50);
@@ -38,18 +40,18 @@ public class GUI_Labels extends JFrame {
 }
 
 class SubClass extends JPanel {
-    private int barSize = 0;
-    private int maxBarSize = 100;
+    private int BarSize = 0;
+    private int MaxBarSize = 100;
 
-    public SubClass(int maxBarSize) {
-        this.maxBarSize = maxBarSize;
+    public SubClass(int MaxBarSize) {
+        this.MaxBarSize = MaxBarSize;
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.setColor(Color.RED);
-        int width = (int) (((double) getWidth() / maxBarSize) * barSize);
+        int width = (int) (((double) getWidth() / MaxBarSize) * BarSize);
 
         if (width == 0) { return; }
 
@@ -57,23 +59,23 @@ class SubClass extends JPanel {
     }
 
     synchronized void fill() {
-        if (barSize == maxBarSize) {
+        if (BarSize == MaxBarSize) {
             try { wait(); } 
             catch (InterruptedException e) { return; }
         }
 
-        barSize++;
+        BarSize++;
         repaint();
         notify();
     }
 
     synchronized void consume() {
-        if (barSize == 0) {
+        if (BarSize == 0) {
             try { wait(); } 
             catch (InterruptedException e) { return; }
         }
 
-        barSize--;
+        BarSize--;
         repaint();
         notify();
     }
