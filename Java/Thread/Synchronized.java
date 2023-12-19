@@ -1,11 +1,13 @@
+package Thread;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Synchronized extends JFrame {
+public class Synchronized extends JFrame {
     public static void main(String[] args) {
         SharedPrinter S = new SharedPrinter();
+
         String[] engText = {"Wise men say,",
                             "only folls rush in",
                             "But i can`t help",
@@ -15,6 +17,7 @@ public class GUI_Synchronized extends JFrame {
                             "if i can`t help",
                             "failing in love with you"
                             };
+
         String[] korText = {"동해물과 백두산이 마르고 닳도록,",
                             "하느님이 보우하사 우리 나라 만세",
                             "대한 사람 대한으로 길이 보전하세",
@@ -23,17 +26,17 @@ public class GUI_Synchronized extends JFrame {
                             "무궁화 삼천리 화려강산",
                             "대한 사람 대한으로 길이 보전하세"
                             };
+
         Thread Threa1 = new WorkerThread(S, engText);
         Thread Threa2 = new WorkerThread(S, korText);
         Threa1.start();
         Threa2.start();
-
     }
 }
 
 class SharedPrinter {
     synchronized public void print(String text) {
-        for (int i = 0; i < text.length(); i++) 
+        for (int i = 0; i < text.length(); i++)
             System.out.print(text.charAt(i));
             System.out.println();
     }
