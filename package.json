@@ -1,11 +1,13 @@
 {
   "dependencies": {
     "async": "^3.2.5",
+    "cheerio": "^1.0.0-rc.12",
     "client": "^0.0.1",
     "commando": "^0.0.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "extend": "^3.0.2",
+    "extends": "^0.0.4",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "install": "^0.13.0",
