@@ -1,11 +1,13 @@
+package GUI.Screen;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
 import java.awt.event.*;
 
-public class GUI_DrawLine extends JFrame {
+public class DrawLine extends JFrame {
 
-    public GUI_DrawLine() {
+    public DrawLine() {
         super("DrawLine 1m");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new CreateLine());
@@ -40,6 +42,6 @@ public class GUI_DrawLine extends JFrame {
 	}
 
     public static void main(String[] args) {
-        new GUI_DrawLine();
+        new DrawLine();
     }
 }

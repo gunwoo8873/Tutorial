@@ -1,4 +1,4 @@
-package GUI.GUI_Event;
+package GUI.Event;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,11 +6,11 @@ import javax.swing.*;
 import javax.swing.event.*;
 import java.util.*;
 
-public class GUI_MouseEvent extends JFrame {
+public class MouseEvent extends JFrame {
 
     private JLabel Main_Label = new JLabel("Test Label");
 
-    public GUI_MouseEvent() {
+    public MouseEvent() {
 
         setTitle("Main Title");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -115,6 +115,6 @@ public class GUI_MouseEvent extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_MouseEvent();
+        new MouseEvent();
     }
 }

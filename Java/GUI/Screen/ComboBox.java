@@ -1,13 +1,15 @@
+package GUI.Screen;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_ComboBox extends JFrame {
+public class ComboBox extends JFrame {
     
     private JLabel Main_Label = new JLabel();
 
-    public GUI_ComboBox() {
+    public ComboBox() {
         super("MenuBar Action Tutorial");
         CreateMenu(); // 메뉴바 정의
 
@@ -71,6 +73,6 @@ public class GUI_ComboBox extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_ComboBox().setVisible(true);;
+        new ComboBox().setVisible(true);;
     }
 }

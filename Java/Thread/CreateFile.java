@@ -8,7 +8,7 @@ public class CreateFile {
         FileWriter AddFile = null;
         int c;
         try {
-            AddFile = new FileWriter("./CreateFile.text");
+            AddFile = new FileWriter("./2.text");
             while ((c = Reader.read())!= 1) {
                 AddFile.write(c);
             }

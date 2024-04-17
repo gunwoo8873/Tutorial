@@ -1,10 +1,12 @@
+package GUI.Screen;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Font extends JFrame {
-    public GUI_Font() {
+public class Font extends JFrame {
+    public Font() {
 		setTitle("문자열, Color, Font 사용  예제");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new MyPanel()); // 새로운 패널을 생성하여 컨텐트팬으로 사용
@@ -31,6 +33,6 @@ public class GUI_Font extends JFrame {
 	}
 
     public static void main(String[] args) {
-        new GUI_Font().setVisible(true);;
+        new Font().setVisible(true);;
     }
 }

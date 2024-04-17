@@ -1,4 +1,4 @@
-package GUI.GUI_Event;
+package GUI.Event;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,12 +6,12 @@ import javax.swing.*;
 import javax.swing.event.*;
 import java.util.*;
 
-public class GUI_KeyEvent extends JFrame {
+public class KeyEvent extends JFrame {
     
     private JLabel Main_Label = new JLabel("Test Label");
     private JPanel Main_Panel = new JPanel();
 
-    public GUI_KeyEvent() {
+    public KeyEvent() {
 
         // super = setTitle (Program Name)
         super("Main Title");
@@ -90,6 +90,6 @@ public class GUI_KeyEvent extends JFrame {
 
     // Debug 2.725 sec
     public static void main(String[] args) {
-        new GUI_KeyEvent();
+        new KeyEvent();
     }
 }

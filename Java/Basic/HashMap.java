@@ -2,7 +2,7 @@ package Basic;
 
 import java.util.*;
 
-public class __HashMap {
+public class HashMap {
     public static void main(String[] args) {
         HashMap<String, String> HashMap = new HashMap<String, String>();
 

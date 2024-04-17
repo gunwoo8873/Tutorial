@@ -1,12 +1,12 @@
-package GUI.GUI_Layout;
+package GUI.Layout;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Border extends JFrame {
-    public GUI_Border() {
+public class Border extends JFrame {
+    public Border() {
 
         // Panel Setting
         setTitle("Main Title");
@@ -49,7 +49,7 @@ public class GUI_Border extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_Border();
+        new Border();
     }
 }
 

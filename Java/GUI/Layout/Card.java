@@ -1,12 +1,12 @@
-package GUI.GUI_Layout;
+package GUI.Layout;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Card extends JFrame{
-    public GUI_Card() {
+public class Card extends JFrame{
+    public Card() {
 
     // Container Layout ADMIN (Null)
         // Panel Setting
@@ -40,6 +40,6 @@ public class GUI_Card extends JFrame{
     }
 
     public static void main(String[] args) {
-        new GUI_Card();
+        new Card();
     }
 }

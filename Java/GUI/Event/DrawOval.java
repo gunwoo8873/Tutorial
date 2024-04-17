@@ -1,13 +1,13 @@
-package GUI.GUI_Event;
+package GUI.Event;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_DrawOval extends JFrame {
+public class DrawOval extends JFrame {
 
-    public GUI_DrawOval() {
+    public DrawOval() {
         super("DrawLine 1m");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new Container());
@@ -38,6 +38,6 @@ public class GUI_DrawOval extends JFrame {
     }
 
     public static void main(String[] args) {
-        
+        new DrawOval();
     }
 }

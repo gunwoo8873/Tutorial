@@ -1,15 +1,17 @@
+package GUI.Screen;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Component extends JFrame {
+public class Component extends JFrame {
     
     //private JLabel Main_Label = new JLabel();
     private JTextField Field = new JTextField(20);
     private JTextArea Area = new JTextArea(7,20);
 
-    public GUI_Component() {
+    public Component() {
 
         super("Component Tutorial");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -73,6 +75,6 @@ public class GUI_Component extends JFrame {
 
 
     public static void main(String[] args) {
-        new GUI_Component();
+        new Component();
     }
 }

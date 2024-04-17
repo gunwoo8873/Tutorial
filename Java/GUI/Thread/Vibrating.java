@@ -1,3 +1,4 @@
+package GUI.Thread;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,9 +7,9 @@ import java.util.Set;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Vibrating extends JFrame implements Runnable{
+public class Vibrating extends JFrame implements Runnable{
     private Thread Thread;
-    public GUI_Vibrating() {
+    public Vibrating() {
         setTitle("Vibrating");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300,450);
@@ -41,6 +42,6 @@ public class GUI_Vibrating extends JFrame implements Runnable{
     }
 
     public static void main(String[] args) {
-        new GUI_Vibrating();
+        new Vibrating();
     }
 }

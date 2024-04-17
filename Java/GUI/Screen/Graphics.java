@@ -1,11 +1,13 @@
+package GUI.Screen;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class GUI_Graphics extends JFrame {
+public class Graphics extends JFrame {
 
-    public GUI_Graphics() {
+    public Graphics() {
         super("Graphics Tutorial");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new MainPanel());
@@ -35,6 +37,6 @@ public class GUI_Graphics extends JFrame {
 	}	
     
     public static void main(String[] args) {
-        new GUI_Graphics().setVisible(true);
+        new Graphics().setVisible(true);
     }    
 }

@@ -1,12 +1,13 @@
+package GUI.Thread;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class GUI_Labels extends JFrame {
+public class Labels extends JFrame {
     private SubClass Bar = new SubClass(100);
 
-    public GUI_Labels(String title) {
+    public Labels(String title) {
         super(title);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
@@ -35,7 +36,7 @@ public class GUI_Labels extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUI_Labels("누르기");
+        new Labels("누르기");
     }
 }
 

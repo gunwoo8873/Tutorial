@@ -1,4 +1,4 @@
-package GUI.GUI_Event;
+package GUI.Event;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,20 +6,20 @@ import javax.swing.*;
 import javax.swing.event.*;
 import java.util.*;
 
-public class GUI_ButtonEvent extends JFrame {
+public class ButtonEvent extends JFrame {
 
     //private JPanel Pbutton;
     //private JPanel Ptext ;
     //private JPanel result;
     //private JPanel main;
 
-    public GUI_ButtonEvent () {
+    public ButtonEvent () {
 
         setTitle("Main Title");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        Container c = getContentPane();
-        c.setLayout(new FlowLayout());
+        Container container = getContentPane();
+        container.setLayout(new FlowLayout());
 
         //main = new JPanel();
         //Pbutton = new JPanel();
@@ -35,7 +35,7 @@ public class GUI_ButtonEvent extends JFrame {
 
         add.addActionListener(new Sub_Class()); // ActionListener Private Class if Event
 
-        c.add(add);
+        container.add(add);
         
         setSize(300, 200);
         setVisible(true);
@@ -57,6 +57,6 @@ public class GUI_ButtonEvent extends JFrame {
     }
     
     public static void main(String[] args) {
-        new GUI_ButtonEvent();
+        new ButtonEvent();
     }
 }
