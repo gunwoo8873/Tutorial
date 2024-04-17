@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-proposal-pipeline-operator": "^7.24.1",
     "async": "^3.2.5",
     "cheerio": "^1.0.0-rc.12",
     "client": "^0.0.1",
@@ -19,6 +22,7 @@
     "path": "^0.12.7",
     "request": "^2.88.2",
     "socket.io": "^4.7.2",
-    "ts": "^0.2.2"
+    "ts": "^0.2.2",
+    "plugins": ["@babel/plugin-proposal-pipeline-operator"]
   }
 }
