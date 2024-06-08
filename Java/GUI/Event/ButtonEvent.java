@@ -44,7 +44,6 @@ public class ButtonEvent extends JFrame {
     private class Sub_Class implements ActionListener {
         @Override
         public void actionPerformed (ActionEvent e) {
-            // TODO Auto-generated method stub
 
             JButton Button1 = (JButton)e.getSource();
 

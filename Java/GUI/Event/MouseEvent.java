@@ -103,13 +103,11 @@ public class MouseEvent extends JFrame {
 
         @Override
         public void mouseMoved(MouseEvent e) {
-            // TODO Auto-generated method stub
             throw new UnsupportedOperationException("Unimplemented method 'mouseMoved'");
         }
 
         @Override
         public void mouseClicked(MouseEvent e) {
-            // TODO Auto-generated method stub
             throw new UnsupportedOperationException("Unimplemented method 'mouseClicked'");
         }
     }
