@@ -25,7 +25,7 @@ rl.question("나이를 입력하세요 : ", function (nai) {
     rl.close();
 })
 
-var nickName = function () {
+let nickName = function () {
     console.log("pretty");
     
     nickName();

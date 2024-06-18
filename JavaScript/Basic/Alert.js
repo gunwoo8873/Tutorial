@@ -23,7 +23,6 @@ function EX2_userinfo() {
 }
 EX2_userinfo()
 
-
 // EX3
 function EX3_userinfo() {
     /** splice : Array의 [Index]의 [Number, Number]부분에 대한 요소범위를 설정한만큼 삭제한다 */

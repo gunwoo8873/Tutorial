@@ -5,6 +5,8 @@
 A="Used Defining Variables"
 B=123456789
 
+echo $A, $B
+
 # echo is used as a basic output statement to define variables or to output strings.
 # echo는 변수 정의나 혹은 문자열을 출력하는데 기본적인 출력문으로 사용한다. 
 echo "Not Used Defining Variables"

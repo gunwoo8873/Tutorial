@@ -1,9 +1,9 @@
-# Modules
-node_modules
-
-#Discord
 config.json
 process.env
 
-#Non Commit
+#JS
 Jquery_EX
+node_modules
+
+# Rust
+target
